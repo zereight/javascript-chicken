@@ -88,3 +88,57 @@
 1. 주문 등록
 2. 결제하기
 3. 프로그램 종료
+
+
+### (참고) eslint, prettier 적용하기
+- npm i -D eslint
+- node_modules/.bin/eslint --init
+- ? How would you like to use ESLint?
+    ❯ To check syntax and find problems
+? What type of modules does your project use?
+    ❯ None of these
+? Which framework does your project use?
+    ❯ None of these
+? Does your project use TypeScript?
+    ❯ No
+? Where does your code run?
+    ❯ browser
+? What format do you want your config file to be in?
+    ❯ JavaScript
+
+- .eslintrc.js
+export default {
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "allowImportExportEverywhere": false
+    },
+    "rules": {
+    }
+};
+
+- npm i prettier -D -E
+- npm i eslint-plugin-prettier eslint-config-prettier -D
+- npm i -D eslint-config-airbnb
+
+- .eslintrc.json
+{
+    "plugins": ["prettier"],
+    "extends": ["eslint:recommended", "plugin:prettier/recommended", "airbnb"],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  }
+
+- .prettierrc.json
+{
+	"trailingComma": "es5",
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true
+}

@@ -1,0 +1,26 @@
+{
+  "name": "javascript-chicken",
+  "version": "1.0.0",
+  "description": "자바스크립트로 우테코 2기 오프라인 코딩테스트 문제 재현하기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zereight/javascript-chicken.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zereight/javascript-chicken/issues"
+  },
+  "homepage": "https://github.com/zereight/javascript-chicken#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "2.2.1"
+  }
+}
