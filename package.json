@@ -4,7 +4,7 @@
   "description": "자바스크립트로 우테코 2기 오프라인 코딩테스트 문제 재현하기",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint" : "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
